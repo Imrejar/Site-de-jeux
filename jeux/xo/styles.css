@@ -1,0 +1,61 @@
+body {
+    font-family: 'Rovoto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    color: #333;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px 0;
+}
+
+.cell {
+    width: 100px;
+    border-radius: 10%;
+    height: 100px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #5c5a5a;
+}
+
+.status {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.exit-btn {
+    position: relative;
+    left: auto;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

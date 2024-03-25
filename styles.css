@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+/******* Fonts Import Start **********/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/********* Fonts Face CSS End **********/
+
+/******* Common Element CSS Start ******/
+@font-face {
+  font-family: "Lexend";
+  src: url('police/Lexend-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+  font-size: 16px;
+  background-color: #294c74;
+}
+.clear {
+  clear: both;
+}
+img {
+  max-width: 100px;
+  border: 10%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 100px;
+  color: #ffe599;
+}
+.site-description {
+  text-align: center;
+  font-size: 25px;
+  color:  #ffe599;
+}
+h2 {
+  margin-bottom: 48px;
+  padding-bottom: 16px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  position: relative;
+  text-transform: capitalize;
+}
+h3 {
+  text-align: center;
+  margin: auto;
+  font-size: 80%;
+  line-height: auto;
+}
+
+/******* Common Element CSS End *********/
+
+
+/******* Middle section CSS Start ******/
+/* -------- Landing page ------- */
+
+.game-section {
+  background-color: #35475b;
+  padding: 60px 50px;
+}
+
+.game-section .item {
+  margin: 0 100px 10px;
+  width: 100px;
+  height: 100px;
+  display: none;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  background: #0b2944;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: all 1s ease; /* Ajout de la transition */
+  -webkit-transition: all 1s ease; /* Ajout de la transition */
+}
+.item h3{
+  height: 200px;
+}
+
+.game-section .item.active {
+  width: 300px;
+
+}
+
+
+.game-section .item:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+}
+.game-section .item-desc {
+  flex-direction: column; /* Aligner les éléments en colonne par défaut */
+  align-items: right; /* Centrer les éléments horizontalement */
+  color: #fff;
+  text-align: right;
+  position: absolute;
+  z-index: 1;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+
+
+.game-section .item.active .item-desc {
+  right: 50px;
+  height: 75px;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  position: absolute;
+}
+
+
+.game-section .owl-carousel.custom-carousel {
+  display: flex; /* Utiliser Flexbox pour aligner les éléments horizontalement */
+}
+
+
+/* -------- title style ------- */
+.line-title {
+  color: #ffe599;
+  position: relative;
+  width: 400px;
+}
+.line-title::before,
+.line-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***** responsive css Start ******/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  h2 {
+    margin-bottom: 32px;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 50px 30px;
+  }
+  .game-section .item {
+    margin: 0 12px 60px;
+    width: 260px;
+    height: 360px;
+  }
+  .game-section .item.active {
+    width: 400px;
+  }
+  .game-section .item-desc {
+    transform: translateY(calc(100% - 46px));
+    -webkit-transform: translateY(calc(100% - 46px));
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h2 {
+    margin-bottom: 32px;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .line-title {
+    width: 330px;
+  }
+
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 50px 30px 40px;
+  }
+  .game-section .item {
+    margin: 0 12px 60px;
+    width: 240px;
+    height: 330px;
+  }
+  .game-section .item.active {
+    width: 360px;
+  }
+  .game-section .item-desc {
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 19px;
+    line-height: 24px;
+  }
+  .line-title {
+    width: 250px;
+  }
+
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 30px 15px 20px;
+  }
+  .game-section .item {
+    margin: 0 10px 40px;
+    width: 200px;
+    height: 280px;
+  }
+  .game-section .item.active {
+    width: 270px;
+    box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+  }
+  .game-section .item-desc {
+    padding: 0 14px 5px;
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+}

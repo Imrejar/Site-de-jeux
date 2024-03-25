@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pierre-Papier-Ciseaux</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+        #score {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pierre-Papier-Ciseaux</h1>
+    
+    <div>
+        <button id="rock" onclick="makeChoice('rock')" onmouseover="highlightButton('rock')" onmouseout="unhighlightButton('rock')"><img src="../assets/rock.png" alt="Pierre" width="100" height="100"></button>
+        <button id="paper" onclick="makeChoice('paper')" onmouseover="highlightButton('paper')" onmouseout="unhighlightButton('paper')"><img src="../assets/paper.png" alt="Papier" width="100" height="100"></button>
+        <button id="scissors" onclick="makeChoice('scissors')" onmouseover="highlightButton('scissors')" onmouseout="unhighlightButton('scissors')"><img src="../assets/scissors.png" alt="Ciseaux" width="100" height="100"></button>
+    </div>
+
+    <div id="result">Choisissez un coup</div>
+    <button id="historybtn"onclick="openHistory()" onmouseover="highlightButton('historybtn')" onmouseout="unhighlightButton('historybtn')">Afficher l'historique</button>
+    <button id="reset-button" onclick="resetGame()" onmouseover="highlightButton('reset-button')" onmouseout="unhighlightButton('reset-button')" style="display: none;">Relancer</button>
+    <div id="history-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeHistory()">&times;</span>
+            <div id="history-content">
+                <!-- Le contenu de l'historique sera affiché ici -->
+            </div>
+        </div>
+    </div>    <div id="score">Score: 0</div>
+
+    <div>
+        <button id="exit" onclick="window.location.href='../../index.html';">Page d'accueil</button>
+    </div>
+
+    <script src="component/component1.js"></script>
+</body>
+</html>

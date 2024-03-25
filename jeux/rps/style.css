@@ -1,0 +1,100 @@
+/* styles.css */
+
+@font-face {
+    font-family: "Lexend";
+    src: url('police/Lexend-VariableFont_wght.ttf') format('truetype');
+  }
+
+body {
+    font-family: "Lexend", sans-serif;
+    text-align: center;
+    background-color: #35475b;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #ffe599;
+}
+
+button {
+    background-color: #9fc5e8;
+    color: #35475b;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+}
+
+button:hover{
+    background-color: #3f9cb5;
+}
+
+#result {
+    margin-top: 20px;
+    color: #ffe599;
+}
+
+#history {
+    position: absolute;
+    top: 50%; /* Ajustez cette valeur selon vos besoins */
+    right: 20px; /* Ajustez cette valeur selon vos besoins */
+    background-color: #9fc5e8;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 300px; /* ajustez la largeur selon votre préférence */
+}
+
+#score {
+    position: absolute;
+    top: 50%; /* Ajustez cette valeur selon vos besoins */
+    left: 50%; /* Centre le score par rapport à la largeur de la fenêtre */
+    transform: translateX(-50%); /* Centre le score horizontalement */
+    background-color: #9fc5e8;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: right;
+}
+#history-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    background-color: #9fc5e8;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+
+#close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+}
+
+#reset-button {
+    position: absolute;
+    bottom: 30%; /* Ajustez cette valeur selon vos besoins */
+    left: 50%; /* Centre le score par rapport à la largeur de la fenêtre */
+    transform: translateX(-60%); /* Centre le score horizontalement */
+    background-color: #9fc5e8;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: right;
+}
+
+#reset-button:hover{
+    background-color: #3f9cb5;
+}

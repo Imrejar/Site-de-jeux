@@ -1,0 +1,61 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Page de Navigation</title>
+</head>
+<body>
+  <div class="background"> 
+    <h1>SITE DE JEUX</h1>
+    <p class="site-description">Bienvenue sur notre site de jeux ! Choisissez parmi nos jeux classiques comme Pierre-Papier-Ciseaux ou Tic-tac-toe et amusez-vous !</p>
+    <section class="game-section">
+
+        <h2 class="line-title">Choix du Jeu</h2>
+        <div class="owl-carousel custom-carousel owl-theme">
+        <div class="item active" data-href="jeux/rps/index.html">
+            <img class="img"src="jeux/assets/rock-paper-scissors.png" alt="Pierre">
+            <div class="item-desc">
+              <h3 class="Pierre-Papier-Ciseaux">Pierre-Papier-Ciseaux</h3>
+            </div>
+          </div>
+
+          <div class="item active"data-href="jeux/xo/index.html">
+            <img src="jeux/assets/tic-tac-toe.png" alt="Morpion">
+            <div class="item-desc">
+              <h3 class="tic-tac-toe">Tic-tac-toe</h3>
+            </div>
+          </div>
+
+          <div class="item active"data-href="jeux/p4/index.html">
+            <img src="jeux/assets/connect-four.png" alt="P4">
+            <div class="item-desc">
+              <h3 class="Puissance4">Puissance 4</h3>
+            </div>
+          </div>
+
+          <div class="item active"data-href="jeux/Tapevite/index.html">
+            <img src="jeux/assets/keyboard.png" alt="P4">
+            <div class="item-desc">
+              <h3 class="Tape vite">Tape Vite !</h3>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+    
+    <footer>
+        <a href="#top">Haut de page</a>
+        <a href="#contact">Contact</a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="settings.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
